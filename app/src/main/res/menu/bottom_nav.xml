@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/first"
+        android:icon="@drawable/ic_baseline_arrow_back_24"
+        android:title="Frist"/>
+    <item
+        android:id="@+id/second"
+        android:icon="@drawable/ic_baseline_arrow_upward_24"
+        android:title="Second"/>
+    <item
+        android:id="@+id/third"
+        android:icon="@drawable/ic_baseline_arrow_forward_24"
+        android:title="Third"/>
+
+</menu>
