@@ -1,19 +1,19 @@
-package com.peter.fragment2.fragment
+package com.peter.fragment2.mainfragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.peter.fragment2.R
 import com.peter.fragment2.databinding.FragmentFirstBinding
 
-class FirstFragment : Fragment() {
-    //뷰을 바인딩해서 다가지고온다.
-    private lateinit var binding: FragmentFirstBinding
-    //뷰를 생성한다.
+class FirstFragment :Fragment(){
+    //바인딩하고
+    private lateinit var binding:FragmentFirstBinding
+
+    //뷰생성하고
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -28,20 +28,7 @@ class FirstFragment : Fragment() {
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        setListener()
-    }
 
-    private fun setListener() {
-        binding.apply {
-            title.setOnClickListener {
-                Toast.makeText(requireContext(),"This is ${title.text} fragment",Toast.LENGTH_SHORT).show()
-
-            }
-
-        }
-    }
 
 
 }
